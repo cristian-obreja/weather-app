@@ -6,7 +6,7 @@
 body{
     font-family: sans-serif;
     background-color: #f7f6f9;
-    height: 100vh;
+    min-height: 100vh;
 }
 .btn{
     border: none;
@@ -44,6 +44,7 @@ body{
     flex-direction: column;
     gap:.5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: fit-content;
 }
 .page-content{
     display: flex;
@@ -109,12 +110,12 @@ body{
 }
 .weather-items{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
     gap: 1rem;
 }
 @media screen and (min-width: 760px){
     .page-container{
         grid-template-columns: 360px 1fr;
-        height: 100%;
+        padding: 2rem;
     }
 }
