@@ -13,6 +13,8 @@ body{
     cursor: pointer;
     padding: .75rem 1rem;
     border-radius: .25rem;
+    font-size: 1rem;
+    width:100%;
 }
 .btn-search{
     color: #fff;
@@ -35,6 +37,8 @@ body{
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .sidebar{
     background-color: #fff;
@@ -78,13 +82,13 @@ body{
     margin-bottom: 1rem;
 }
 .weather-panel{
-    padding:1rem ;
-    border-radius: .25rem;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .5rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    gap: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.15) 0px 2px 8px 0px;
 
 }
 .weather-details{
@@ -96,6 +100,8 @@ body{
 
 .weather-panel img{
     width: 80px;
+    height: auto;
+    flex-shrink: 0;
 }
 .weather-panel .date{
     font-weight: 700;
@@ -110,12 +116,13 @@ body{
 }
 .weather-items{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 1rem;
 }
-@media screen and (min-width: 760px){
+@media screen and (min-width: 768px){
     .page-container{
-        grid-template-columns: 360px 1fr;
+        grid-template-columns: 320px 1fr;
         padding: 2rem;
+        gap:2rem;
     }
 }
